@@ -1,0 +1,103 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.coming-soon-pg {
+  /* Background image */
+  background: url('./coming-soon.svg');
+  background-size: 1000px 200px;
+  /* Full-screen */
+  height: 715px;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Position logo in the top-left corner */
+.topleft img {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  margin: 0;
+  width: 300px;
+  left: -50px;
+  top: -50px;
+}
+
+.topleft p, .bottomleft p {
+  margin: 0;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 15px;
+  left: 16px;
+  font-size: 15px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle h1 {
+  /* Set the font-size */
+  font-size: 60px;
+}
+
+/* Style the <hr> element */
+.middle hr {
+  margin: 30px auto 40px;
+  width: 30%;
+}
+
+.middle .container {
+  animation: load 3s normal forwards;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 72%; }
+}
+
+.middle p {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+/* Button styling */
+.contact-me button {
+  background-color: rgba(53, 147, 255, 0.705); 
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  opacity: 0.8;
+  margin: 14px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-me button:hover {
+  background-color: rgba(53, 147, 255, 0.705);
+  color: white;
+  opacity: 1;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
